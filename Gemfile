@@ -61,3 +61,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "flickr", "~> 2.1"
+
+gem "figaro", "~> 1.2"
