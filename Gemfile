@@ -65,3 +65,5 @@ end
 gem "flickr", "~> 2.1"
 
 gem "figaro", "~> 1.2"
+
+gem "cssbundling-rails", "~> 1.4"

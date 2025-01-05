@@ -16,10 +16,21 @@
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   </head>
-  <body>
-    <main style="text-align: center">
+  <body class="flex flex-col min-h-screen">
+    <main class="container mx-auto mb-8">
       <%= yield %>
     </main>
+    <footer class="mt-auto mb-4">
+      <p class="text-center text-gray-500 text-sm">
+        &copy;
+        <%= Time.current.year %>
+        Odin Flickr
+      </p>
+      <p class="text-center text-gray-500 text-sm"><%= link_to "Source Code",
+        "https://github.com/nanafox/odin-flickr",
+        target: "_blank" %></p>
+    </footer>
   </body>
 </html>
